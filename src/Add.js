@@ -5,6 +5,10 @@ export default function Add({onAdd}) {
     const [desc, setDesc] = useState("")
 
     const save = () => {
+      if(toDo == ""){
+        alert("Please enter a task!")
+        return
+      }
       onAdd({toDo, desc, done: false})
 
       setText("")
