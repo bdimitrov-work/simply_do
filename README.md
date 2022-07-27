@@ -1,8 +1,9 @@
 Simple todo app 
 
 To run it:
-1. npm run server
-2. npm start
+-install dependencies
+-npm run server
+-npm start
 
 Created with React.
 Used JavaScript and CSS.
