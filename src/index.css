@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(255, 79, 79);
+  font-family: Roboto Condensed, sans-serif;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 79, 79);
+}
+
+.App {
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 80vh;
+  background-color: #333;
+  border-radius: 10px;
+  margin: 50px;
+  padding-bottom: 20px;
+  box-shadow: 20px 20px 50px #333;
+}
+
+/*HEADER*/
+
+.header {
+  grid-column: span 2;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid white;
+  font-size: 1.3rem;
+}
+
+.header h1 {
+  margin: 30px;
+  color: #fff;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid #fff;
+}
+
+.header div {
+  width: 35px;
+  height: 35px;
+  margin: 30px;
+  margin-right: 50px;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  background-color: rgb(255, 79, 79);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+.header div:hover {
+  background-color: rgb(245, 107, 107);
+}
+
+/*ADD*/
+
+.add {
+  grid-column: span 2;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  border-bottom: 2px solid white;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.add .text{
+  background-color: black;
+  color: #fff;
+  border-radius: 5px;
+  margin: 10px;
+  border: none;
+  padding: 5px;
+
+  width: 500px;
+  height: 30px;
+}
+
+.add .desc {
+  background-color: black;
+  color: #fff;
+  border-radius: 5px;
+  margin: 10px;
+  border: none;
+  padding: 5px;
+
+  width: 500px;
+  height: 70px;
+}
+
+.add button{
+  background-color: rgb(255, 79, 79);
+  color: #000;
+  border: none;
+  margin: 10px;
+  width: 510px;
+  height: 30px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.add button:hover {
+  background-color: rgb(245, 107, 107);
+  border: none;
+}
+
+/*SUB-HEADER*/
+
+.todo {
+  grid-column: 1/2;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  margin: 20px 0px 20px 0px;
+}
+
+.done {
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  margin: 20px 0px 20px 0px;
+}
+
+/*TASKS*/
+
+.tasks {
+  grid-column: 1/2;
+  min-height: 450px;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 10px;
+  background-color: rgb(255, 79, 79);
+  box-shadow: inset 5px 5px 20px #333;
+}
+
+/*TASKS-DONE*/
+
+.tasks-done {
+  grid-column: 2/3;
+  min-height: 450px;
+  border-radius: 5px;
+  margin-right: 20px;
+  margin-left: 10px;
+  background-color: rgb(255, 79, 79);
+  box-shadow: inset 5px 5px 20px #333;
+}
+
+/*TASK*/
+
+.task {
+  min-height: 70px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 7fr 1fr;
+}
+
+.task:hover{
+  background-color: #555;
+  cursor: pointer;
+}
+
+.task-done{
+  min-height: 70px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 7fr 1fr;
+}
+
+.task h2 {
+  margin: 20px;
+}
+
+.btn {
+  width: 70px;
+  height: 30px;
+  margin: 15px;
+  align-self: center;
+  font-weight: bold;
+  color: #fff;
+  background: rgb(255, 79, 79);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgb(245, 107, 107);
+}
+
+.btn:active {
+  background-color: #fff;
+}
+
+.card {
+  position: absolute;
+  justify-self: center;
+  align-self: center;
+  width: 60%;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -10px -10px 30px #222;
+}
+
+.card h1{
+  font-size: 3rem;
+  align-self: center;
+}
+
+.card p{
+  width: 95%;
+  height: 100%;
+  font-size: 1.2rem;
+  margin: 20px;
+  margin-right: 30px;
+}
+
+.card div{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .close {
+  align-self: flex-end;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.card div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .header div {
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    margin-right: 30px;
+  }
+
+  .add {
+    width: 100%;
+  }
+
+  .tasks{
+    margin: 10px;
+    width: 97%;
+    min-height: 300px;
+  }
+
+  .tasks-done {
+    margin: 10px;
+    width: 97%;
+    min-height: 300px;
+  }
+
+  .done {
+    display: none;
+  }
+
+  .todo {
+    margin: 10px 0px 10px 0px;
+  }
+
+  .mobile {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin: 10px 0px 10px 0px;
+  }
+
+  .card h1{
+    font-size: 2rem;
+  }
+
+  .card p{
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 560px){
+  .App {
+    width: 95%;
+    margin: 20px 0;
+  }
+
+  .card h1{
+    font-size: 1.5rem;
+  }
+
+  .card p{
+    font-size: 1rem;
+  }
+
+  .add .text{
+    width: 95%;
+  }
+
+  .add .desc{
+    width: 95%;
+  }
+
+  .add button {
+    width: 96%;
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "tasks": [
+    {
+      "toDo": "Go to the gym",
+      "desc": "Monday workout. 3 sets pullups, 4 sets standing rows, 3 sets deadlift, 3 sets machine rows and 3 sets lat pulldown. ",
+      "done": false,
+      "id": 3
+    }
+  ]
+}
